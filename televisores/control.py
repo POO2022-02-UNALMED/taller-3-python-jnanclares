@@ -3,6 +3,9 @@ class Control:
     def __init__(self):
         self._tv = None
         
+    def getTv(self):
+        return self._tv 
+        
     def turnOn(self):
         self._tv.turnOn()
     
@@ -26,4 +29,4 @@ class Control:
 
     def enlazar(self, tv):
         self._tv = tv
-        self._tv.setControl(self)
+        tv.setControl(self)
